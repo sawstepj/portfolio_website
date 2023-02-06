@@ -17,9 +17,9 @@ export default function Navbar() {
   useEffect(() => {
     anime({
       targets: "ul li",
-      translateX: [100, 0],
+      translateY: [0, 50],
       opacity: [0, 1],
-      easing: "easeInOutQuad",
+      easing: "easeInOutQuart",
       duration: 1000,
       delay: anime.stagger(100),
     });

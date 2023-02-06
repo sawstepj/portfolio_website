@@ -8,6 +8,9 @@ body {
   color: #b6ccd7;
   scrollbar-width: none;
   width: 100%;
+  --background-color: #0a192f;
+  --green-text: #64ffda;
+  --light-blue-text: #a8b2d1;
 }
 
 /* hide default chrome scrollbar */

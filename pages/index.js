@@ -6,10 +6,23 @@ import About from "./about";
 import Contact from "./contact";
 import Home from "./home";
 import Navbar from "./navbar";
+import React, { useState, useEffect } from "react";
+import anime from "animejs";
 
 export default function Landing() {
+  useEffect(() => {
+    // target all components in the return statement with anime.js
+    // Create ease in animation for all elements in the return statement
+    anime({
+      targets: "section",
+      translateY: [0, 50],
+      opacity: [0, 1],
+      easing: "easeInOutQuart",
+      duration: 1000,
+      delay: anime.stagger(400),
+    });
+  }, []);
 
-  
   return (
     <div className={styles.container}>
       <Head>
@@ -39,16 +52,6 @@ export default function Landing() {
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
       </footer>
     </div>
   );

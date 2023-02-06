@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
+import NameSVG from "./NameSVG";
 
 export default function Home() {
 
@@ -14,7 +15,7 @@ export default function Home() {
             fontSize: "5rem",
             // marginRight: "10rem",
           }}>
-          <span>Sawyer Jones</span>
+          <NameSVG />
         </h2>
         <h1
           style={{
