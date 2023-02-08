@@ -10,8 +10,8 @@ export default function About() {
         style={{
           fontSize: "20rem",
           textAlign: "center",
-        }}>About</h1>
-      <p>This is the about page</p>
+        }}>About Me</h1>
+      <p>I recently graduated from Loyola University of Chicago with a B.S. in Software Engineering</p>
       <Link href="#contact">Go to contact section</Link>
     </div>
   );

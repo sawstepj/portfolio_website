@@ -9,14 +9,16 @@ export default function Home() {
   return (
     <div className={styles.home}>
       <div className={styles.grid}>
+        
         <h2 
           style={{
             color: h2FontColor,
             fontSize: "5rem",
             // marginRight: "10rem",
           }}>
-          <NameSVG />
+          
         </h2>
+        <NameSVG />
         <h1
           style={{
             fontSize: "3rem",
@@ -25,7 +27,7 @@ export default function Home() {
         >
           Welcome to My Portfolio
         </h1>
-        <p>This is the home section</p>
+        <p>I built this website to showcase my past and current projects</p>
         <Link href="#about">Go to about section</Link>
       </div>
     </div>
