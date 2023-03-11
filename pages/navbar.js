@@ -32,13 +32,19 @@ export default function Navbar() {
     <header className={headerClass}>
       <ul className={styles.navbar}>
         <li>
-          <Link href="#home">Home</Link>
+          <Link href="#home" scroll={false}>
+            Home
+          </Link>
         </li>
         <li>
-          <Link href="#about">About</Link>
+          <Link href="#about" scroll={false}>
+            About
+          </Link>
         </li>
         <li>
-          <Link href="#contact">Contact</Link>
+          <Link href="#contact" scroll={false}>
+            Contact
+          </Link>
         </li>
       </ul>
     </header>

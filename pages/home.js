@@ -28,7 +28,7 @@ export default function Home() {
           Welcome to My Portfolio
         </h1>
         <p>I built this website to showcase my past and current projects</p>
-        <Link href="#about">Go to about section</Link>
+        <Link href="#about" scroll={false}>Go to about section</Link>
       </div>
     </div>
   );

@@ -9,11 +9,15 @@ export default function Contact() {
           fontSize: "10rem",
           textAlign: "center",
         }}
-      >Contact</h1>
+      >
+        Contact
+      </h1>
       <p>
         <span>This is the contact page</span>
       </p>
-      <Link href="#home">Go to home section</Link>
+      <Link href="#home" scroll={false}>
+        Go to home section
+      </Link>
     </div>
   );
 }
