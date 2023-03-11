@@ -247,3 +247,51 @@
   margin: 0px auto;
   background-color: var(--light-blue-text);
 }
+
+.sidebarRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  right: 40px;
+  left: auto;
+  z-index: 10;
+  background-color: var(--background-color);
+}
+
+.sidebarRight::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: var(--light-blue-text);
+}
+
+.sidebarRightLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 200px;
+  margin: 20px;
+  margin-left: -15px;
+  background-color: var(--background-color);
+  transition: all 0.2s ease-in-out;
+}
+
+/* css class for when text sidebarRightLink is hovered, the text is highlighted */
+.sidebarRightLink:hover {
+  color: var(--green-text);
+}
+
+/* css class for when svg in sidebarLink is hovered, the svg is highlighted */
+.sidebarLink:hover {
+  color: var(--green-text);
+  /* translate upwards */
+  transform: translateY(-5px);
+}

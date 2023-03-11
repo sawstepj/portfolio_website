@@ -8,7 +8,8 @@ import Home from "./home";
 import Navbar from "./navbar";
 import React, { useState, useEffect } from "react";
 import anime from "animejs";
-import SidebarLeft from "./sidebar";
+import SidebarLeft from "./sidebarLeft";
+import SidebarRight from "./sidebarRight";
 
 export default function Landing() {
   useEffect(() => {
@@ -33,6 +34,7 @@ export default function Landing() {
       </Head>
       <Navbar />
       <SidebarLeft />
+      <SidebarRight />
       <main className={styles.main}>
         <div className={styles.scrollContainer}>
           <div className={styles.home}>
