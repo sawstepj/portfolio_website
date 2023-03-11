@@ -8,6 +8,7 @@ import Home from "./home";
 import Navbar from "./navbar";
 import React, { useState, useEffect } from "react";
 import anime from "animejs";
+import SidebarLeft from "./sidebar";
 
 export default function Landing() {
   useEffect(() => {
@@ -31,6 +32,7 @@ export default function Landing() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      <SidebarLeft />
       <main className={styles.main}>
         <div className={styles.scrollContainer}>
           <div className={styles.home}>
@@ -51,8 +53,7 @@ export default function Landing() {
         </div>
       </main>
 
-      <footer className={styles.footer}>
-      </footer>
+      <footer className={styles.footer}></footer>
     </div>
   );
 }
