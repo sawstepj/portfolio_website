@@ -16,10 +16,8 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
   width: 100%;
-  
 }
 
 .scrollContainer {
@@ -64,9 +62,11 @@
 
 .footer {
   display: flex;
+  flex-direction: column;
   flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
+  padding: 5rem;
+  margin-top: 2.5rem;
+  /* border-top: 1px solid #eaeaea; */
   justify-content: center;
   align-items: center;
 }
@@ -76,6 +76,7 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  color: var(--green-text);
 }
 
 .title a {
@@ -167,7 +168,7 @@
 
 .nav {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: row;
 }
@@ -175,12 +176,18 @@
 .navbar {
   color: var(--light-blue-text);
   display: flex;
-  justify-content: space-evenly;
+  padding: 1rem;
   flex-direction: row;
   list-style: none;
-  padding: 1rem;
-  margin: 1rem;
   margin-top: -40px;
+}
+
+/* css class for .navbar elements */
+.navbar a {
+  color: var(--light-blue-text);
+  text-decoration: none;
+  margin: 1rem;
+  font-size: 1rem;
 }
 
 /* css class for when text in navbar is hovered, it changes color */
@@ -189,10 +196,14 @@
 }
 
 .about {
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
+  align-items: flex-start;
+  width: 100%;
 }
 .home {
-  align-items: flex-start;
+  /* move content down */
+  margin-top: 15rem;
+  align-items: center;
   width: 100%;
 }
 .contact {

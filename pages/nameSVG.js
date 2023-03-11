@@ -20,7 +20,7 @@ export default function NameSVG() {
   }, []);
 
   return (
-    <svg viewBox="0 0 300 15" width="500" height="100">
+    <svg viewBox="-50 0 400 15" width="1000" height="300">
       <g
         class="lines"
         fill="none"

@@ -54,8 +54,12 @@ export default function Landing() {
           </div>
         </div>
       </main>
-
-      <footer className={styles.footer}></footer>
+      <div>
+        <footer className={styles.footer}>
+          Designed and Built by Sawyer Jones
+          <a href="https://github.com/sawstepj/portfolio_website">Repository</a>
+        </footer>
+      </div>
     </div>
   );
 }
