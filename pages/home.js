@@ -18,14 +18,7 @@ export default function Home() {
         <NameSVG />
       </div>
       <div className={styles.grid}>
-        <h1
-          style={{
-            fontSize: "2rem",
-            // textAlign: "center",
-          }}
-        >
-          Welcome to My Portfolio
-        </h1>
+        <h1 className={styles.sectionTitle}>Welcome to My Portfolio</h1>
         <p>I built this website to showcase my past and current projects</p>
       </div>
     </div>
