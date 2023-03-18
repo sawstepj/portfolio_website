@@ -5,20 +5,12 @@ export default function Contact() {
   return (
     <div className={styles.contact}>
       <div className={styles.grid}>
-        <h1
-          style={{
-            fontSize: "10rem",
-            textAlign: "center",
-          }}
-        >
-          Contact
-        </h1>
+        <h1 className={styles.sectionTitle}>Contact</h1>
         <p>
-          <span>This is the contact page</span>
+          <span>
+            This is the contact page. Here is my Email and Phone Number
+          </span>
         </p>
-        <Link href="#home" scroll={false}>
-          Go to home section
-        </Link>
       </div>
     </div>
   );

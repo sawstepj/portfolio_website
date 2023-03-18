@@ -42,13 +42,11 @@ export default function Landing() {
               <Home />
             </section>
             {/* about section that the page focuses on when the link to about section is clicked on */}
-            <div>
-              <section className={styles.about} id="about">
-                <About />
-              </section>
-            </div>
+            <section className={styles.about} id="about">
+              <About />
+            </section>
             {/* contact section that the page focuses on when the link to contact section is clicked on */}
-            <section id="contact">
+            <section className={styles.contact} id="contact">
               <Contact />
             </section>
           </div>

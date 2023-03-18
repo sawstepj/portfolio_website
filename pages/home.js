@@ -18,8 +18,9 @@ export default function Home() {
         <NameSVG />
       </div>
       <div className={styles.grid}>
+        {/* change the style class for this h1 */}
         <h1 className={styles.sectionTitle}>Welcome to My Portfolio</h1>
-        <p>I built this website to showcase my past and current projects</p>
+        <p>I built this website to showcase my past and current projects and as a way to contact me</p>
       </div>
     </div>
   );

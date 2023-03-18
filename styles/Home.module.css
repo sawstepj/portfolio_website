@@ -107,6 +107,17 @@
   font-size: 2rem;
 }
 
+.sectionTitle::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -15px;
+  width: 15rem;
+  height: 1px;
+  margin-left: 10rem;
+  background-color: var(--green-text);
+}
+
 .description {
   margin: 4rem 0;
   line-height: 1.5;
@@ -201,19 +212,22 @@
   color: var(--green-text);
 }
 
-.about {
-  /* background-color: var(--background-color); */
-  align-items: flex-start;
-  width: 100%;
-}
 .home {
   /* move content down */
-  margin-top: 15rem;
+  margin-top: 10rem;
   align-items: center;
   width: 100%;
 }
+.about {
+  /* background-color: var(--background-color); */
+  margin-top: 40rem;
+  width: 100%;
+}
+
 .contact {
   /* background-color: blue; */
+  margin-top: 40rem;
+  width: 100%;
 }
 
 .splash {
@@ -237,7 +251,6 @@
   right: auto;
   left: 40px;
   z-index: 10;
-  background-color: var(--background-color);
 }
 
 .sidebarList {
@@ -253,7 +266,6 @@
   height: 40px;
   margin: 20px;
   margin-left: -20px;
-  background-color: var(--background-color);
   transition: all 0.2s ease-in-out;
 }
 
@@ -264,6 +276,7 @@
   height: 90px;
   margin: 0px auto;
   background-color: var(--light-blue-text);
+  z-index: -2;
 }
 
 .sidebarRight {
@@ -277,7 +290,6 @@
   right: 40px;
   left: auto;
   z-index: 10;
-  background-color: var(--background-color);
 }
 
 .sidebarRight::after {
@@ -298,7 +310,6 @@
   height: 200px;
   margin: 20px;
   margin-left: -15px;
-  background-color: var(--background-color);
   transition: all 0.2s ease-in-out;
 }
 
@@ -322,6 +333,7 @@
   margin-left: auto;
   position: relative;
   max-width: 300px;
+  margin-left: 100px;
 }
 
 .sawyerHeadshotWrapper::before,
@@ -356,4 +368,45 @@
 /* Once hovering ends, border eases back to original position */
 .sawyerHeadshotWrapper:not(:hover)::after {
   transition: all 0.2s ease-in-out;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.aboutText {
+  max-width: 600px;
+}
+
+.skillsList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 5px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  list-style: none;
+}
+
+.skillsList li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 1rem;
+  line-height: 20px;
+}
+
+.skillsList li:hover {
+  color: var(--green-text);
+}
+
+.skillsList li::before {
+  content: ">";
+  position: absolute;
+  left: 0px;
+  color: var(--green-text);
+  font-size: 1rem;
+  line-height: 20px;
 }

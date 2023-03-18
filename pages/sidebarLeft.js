@@ -7,7 +7,6 @@ export default function SidebarLeft() {
       <ul className={styles.sidebarList}>
         <li>
           <a className={styles.sidebarLink} href="https://github.com/sawstepj">
-            {/* github icon from feather-icons library */}
             <svg
               class="feather feather-github"
               xmlns="http://www.w3.org/2000/svg"
